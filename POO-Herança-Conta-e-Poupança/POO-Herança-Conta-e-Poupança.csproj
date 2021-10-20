@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>POO_Herança_Conta_e_Poupança</RootNamespace>
+  </PropertyGroup>
+
+</Project>
