@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//Frederico Guilherme Camilli Proença RA:200925
 
 namespace POO_Herança_Conta_e_Poupança
 {
     //Declaração da classe ContaPoupanca, que herda o código da classe conta.
-    class ContaPoupanca: Conta
+    class ContaPoupanca : Conta
     {
         //Declaração da variável double TaxaJuros, com o uso de encapsulamento via Automatic Properties.
         public double TaxaJuros { get; set; }
         //Declaração do construtor padrão e do construtor com parâmetros herdados da classe Conta, respectivamente.
         public ContaPoupanca() { }
-        public ContaPoupanca(int numero, string titular, double saldo, double taxaJuros):base(numero, titular,saldo)
+        public ContaPoupanca(int numero, string titular, double saldo, double taxaJuros) : base(numero, titular, saldo)
         {
             TaxaJuros = taxaJuros;
         }

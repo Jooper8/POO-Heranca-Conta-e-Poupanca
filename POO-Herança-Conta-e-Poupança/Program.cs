@@ -21,7 +21,7 @@ namespace POO_Herança_Conta_e_Poupança
             titular = Console.ReadLine();
             Console.WriteLine("Insira o saldo presente na conta:");
             saldo = double.Parse(Console.ReadLine());
-            //Declaração do vetor conta baseada na classe ContaJuridica.
+            //Declaração do vetor conta baseada na classe escolhida pelo usuário.
             ContaPoupanca conta = new(numero, titular, saldo, 2);
             //Ponto para voltar ao selecionar a escolha no switch que será preenchido.
             while (looping)
@@ -63,13 +63,13 @@ namespace POO_Herança_Conta_e_Poupança
                         break;
                     case 3:
                         //Case no qual o usuário sai da aplicação.
-                            looping = false;
-                            Console.WriteLine("Saindo do aplicativo.");
-                            break;
+                        looping = false;
+                        Console.WriteLine("Saindo do aplicativo.");
+                        break;
                     default:
                         //Case no qual o usuário não preenche um valor válido.
-                            Console.WriteLine("Comando selecionado não é válido.");
-                            break;
+                        Console.WriteLine("Comando selecionado não é válido.");
+                        break;
 
                 }
 
