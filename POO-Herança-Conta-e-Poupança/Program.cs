@@ -21,7 +21,7 @@ namespace POO_Herança_Conta_e_Poupança
             titular = Console.ReadLine();
             Console.WriteLine("Insira o saldo presente na conta:");
             saldo = double.Parse(Console.ReadLine());
-            //Declaração do vetor conta baseada na classe escolhida pelo usuário.
+            //Declaração do vetor conta baseada na classe ContaPoupanca.
             ContaPoupanca conta = new(numero, titular, saldo, 2);
             //Ponto para voltar ao selecionar a escolha no switch que será preenchido.
             while (looping)
