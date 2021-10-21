@@ -3,7 +3,7 @@
 namespace POO_Herança_Conta_e_Poupança
 {
     //Declaração da classe Conta, que possui os métodos e variáveis principais a serem utilizadas no programa.
-    class Conta
+    abstract class Conta
     {
         //Declaração das variáveis Numero e Titular (int e string, respectivamente), com o uso de encapsulamento via Automatic Properties.
         public int Numero { get; private set; }
