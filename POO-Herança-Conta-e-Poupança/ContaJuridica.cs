@@ -2,14 +2,13 @@
 
 namespace POO_Herança_Conta_e_Poupança
 {
-    //Declaração da classe ContaJuridica, que herdará o código da classe Conta.
+    //Declaração da classe ContaJuridica, que herda o código da classe Conta.
     class ContaJuridica : Conta
     {
         //Declaração da variável double EsprestimoLimite, com o uso de encapsulamento via Automatic Properties.
         public double EmprestimoLimite { get; set; }
-        //Declaração do Construtor Padrão.
+        //Declaração do construtor padrão e do construtor com parâmetros herdados da classe Conta, respectivamente.
         public ContaJuridica() { }
-        //Declaração do Construtor com os parâmetros herdados da classe Conta.
         public ContaJuridica(int numero, string titular, double saldo, double emprestimoLimite) : base(numero, titular, saldo)
         {
             EmprestimoLimite = emprestimoLimite;
